@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBC - Recomendação de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Raciocínio Baseado em Casos</h1>
+      <h2>Recomendação Inteligente de Filmes</h2>
+    </header>
+
+    <div class="card">
+      <label for="filmeSelect">Escolha um filme que você já assistiu:</label>
+      <select id="filmeSelect" onchange="handleSelectChange()">
+        <option value="">Selecione um filme...</option>
+      </select>
+      <p class="hint">Clique em um pôster para selecionar o filme.</p>
+      <div id="moviesGrid" class="movies-grid"></div>
+    </div>
+
+    <div id="resultado" class="hidden">
+      <h3>Top 5 Filmes Mais Similares</h3>
+      <div id="listaRecomendacoes" class="recommendations-row"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
